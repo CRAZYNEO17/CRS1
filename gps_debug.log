@@ -1,0 +1,4 @@
+2025-03-06 17:00:33,974 - gps_service - DEBUG - Starting location detection
+2025-03-06 17:00:33,975 - gps_service - DEBUG - Importing Windows Geolocation SDK
+2025-03-06 17:00:33,976 - gps_service - ERROR - Error initializing Windows Geolocator: '_winsdk_Windows_Devices_Geolocation.Geolocator' object has no attribute 'allow_fallback_to_cached_location'
+2025-03-06 17:00:33,976 - gps_service - ERROR - Failed to initialize Windows Geolocator

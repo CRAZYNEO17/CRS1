@@ -1,0 +1,2 @@
+[console_scripts]
+nmeasim = nmeasim.gui:main

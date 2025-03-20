@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agri Wiz</string>
+    <string name="tab_custom">Custom</string>
+    <string name="tab_location">Location</string>
+    <string name="detect_location">Detect Location</string>
+    <string name="get_recommendations">Get Recommendations</string>
+    <string name="estimate_yield">Estimate Yield</string>
+    <string name="current_location">Current Location</string>
+    <string name="soil_type_hint">Soil Type</string>
+    <string name="climate_hint">Climate</string>
+    <string name="season_hint">Season</string>
+    <string name="rainfall_hint">Rainfall (Optional)</string>
+    <string name="humidity_hint">Humidity (Optional)</string>
+    <string name="soil_fertility_hint">Soil Fertility (Optional)</string>
+    <string name="water_needs_format">Water needs: %s</string>
+    <string name="humidity_format">Humidity: %s</string>
+    <string name="soil_fertility_format">Soil fertility: %s</string>
+    <string name="soil_types_format">Soil types: %s</string>
+    <string name="climates_format">Climates: %s</string>
+    <string name="seasons_format">Seasons: %s</string>
+</resources>

@@ -1,0 +1,3388 @@
+{
+    "northern_india": {
+        "common_soil_types": [
+            "alluvial",
+            "clay",
+            "loamy"
+        ],
+        "climate": "subtropical",
+        "rainfall": "moderate",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "november",
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september",
+                "october"
+            ]
+        }
+    },
+    "southern_india": {
+        "common_soil_types": [
+            "red",
+            "black soil",
+            "laterite"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "punjab_india": {
+        "common_soil_types": [
+            "alluvial",
+            "loamy"
+        ],
+        "climate": "subtropical",
+        "rainfall": "moderate",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "november",
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "spring": [
+                "march"
+            ]
+        }
+    },
+    "kerala_india": {
+        "common_soil_types": [
+            "laterite",
+            "red",
+            "alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ],
+            "spring": [
+                "february"
+            ]
+        }
+    },
+    "delhi": {
+        "common_soil_types": [
+            "alluvial",
+            "clay loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "mumbai": {
+        "common_soil_types": [
+            "black soil",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october"
+            ],
+            "fall": [
+                "november"
+            ]
+        }
+    },
+    "kolkata": {
+        "common_soil_types": [
+            "alluvial",
+            "clay"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "chennai": {
+        "common_soil_types": [
+            "red soil",
+            "clay",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bangalore": {
+        "common_soil_types": [
+            "red soil",
+            "laterite"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "hyderabad": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "ahmedabad": {
+        "common_soil_types": [
+            "alluvial",
+            "black soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "november",
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september",
+                "october"
+            ]
+        }
+    },
+    "pune": {
+        "common_soil_types": [
+            "black soil",
+            "laterite"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "jaipur": {
+        "common_soil_types": [
+            "sandy",
+            "loamy"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "lucknow": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bhopal": {
+        "common_soil_types": [
+            "black soil",
+            "mixed red and black"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "patna": {
+        "common_soil_types": [
+            "alluvial",
+            "clay loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kochi": {
+        "common_soil_types": [
+            "laterite",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "guwahati": {
+        "common_soil_types": [
+            "red soil",
+            "alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "chandigarh": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "surat": {
+        "common_soil_types": [
+            "black soil",
+            "coastal alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "varanasi": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "nagpur": {
+        "common_soil_types": [
+            "black soil",
+            "red soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "coimbatore": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "indore": {
+        "common_soil_types": [
+            "black soil",
+            "mixed red and black"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "thiruvananthapuram": {
+        "common_soil_types": [
+            "laterite",
+            "coastal alluvial",
+            "red soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "shimla": {
+        "common_soil_types": [
+            "mountain soil",
+            "sandy loam"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june",
+                "july"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "dehradun": {
+        "common_soil_types": [
+            "alluvial",
+            "mountain soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "nashik": {
+        "common_soil_types": [
+            "black soil",
+            "red soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "agra": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "rajkot": {
+        "common_soil_types": [
+            "black soil",
+            "sandy"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "amritsar": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "raipur": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "jodhpur": {
+        "common_soil_types": [
+            "sandy",
+            "desert soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "madurai": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "visakhapatnam": {
+        "common_soil_types": [
+            "red soil",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "ranchi": {
+        "common_soil_types": [
+            "red soil",
+            "laterite"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "vijayawada": {
+        "common_soil_types": [
+            "black soil",
+            "alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bhubaneswar": {
+        "common_soil_types": [
+            "red soil",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "mangalore": {
+        "common_soil_types": [
+            "laterite",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "mysore": {
+        "common_soil_types": [
+            "red soil",
+            "laterite"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "udaipur": {
+        "common_soil_types": [
+            "sandy loam",
+            "clay"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "gwalior": {
+        "common_soil_types": [
+            "black soil",
+            "mixed alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "warangal": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "tirupati": {
+        "common_soil_types": [
+            "red soil",
+            "sandy loam"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "jammu": {
+        "common_soil_types": [
+            "mountain soil",
+            "alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "gangtok": {
+        "common_soil_types": [
+            "mountain soil",
+            "forest soil"
+        ],
+        "climate": "temperate",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september",
+                "october"
+            ],
+            "fall": [
+                "november"
+            ]
+        }
+    },
+    "panaji": {
+        "common_soil_types": [
+            "laterite",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october"
+            ],
+            "fall": [
+                "november"
+            ]
+        }
+    },
+    "imphal": {
+        "common_soil_types": [
+            "forest soil",
+            "hill soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "shillong": {
+        "common_soil_types": [
+            "laterite",
+            "forest soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "darjeeling": {
+        "common_soil_types": [
+            "mountain soil",
+            "forest soil"
+        ],
+        "climate": "temperate",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "ooty": {
+        "common_soil_types": [
+            "forest soil",
+            "laterite"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september",
+                "october"
+            ],
+            "fall": [
+                "november"
+            ]
+        }
+    },
+    "rishikesh": {
+        "common_soil_types": [
+            "mountain soil",
+            "alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "puri": {
+        "common_soil_types": [
+            "coastal alluvial",
+            "sandy"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "aligarh": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "mathura": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "haridwar": {
+        "common_soil_types": [
+            "alluvial",
+            "mountain soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "ajmer": {
+        "common_soil_types": [
+            "sandy",
+            "rocky"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "siliguri": {
+        "common_soil_types": [
+            "alluvial",
+            "forest soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "erode": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bhilai": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bilaspur": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "thrissur": {
+        "common_soil_types": [
+            "laterite",
+            "alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kollam": {
+        "common_soil_types": [
+            "laterite",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "alappuzha": {
+        "common_soil_types": [
+            "coastal alluvial",
+            "sandy"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "berhampur": {
+        "common_soil_types": [
+            "red soil",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bhagalpur": {
+        "common_soil_types": [
+            "alluvial",
+            "clay loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bharuch": {
+        "common_soil_types": [
+            "black soil",
+            "alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bhavnagar": {
+        "common_soil_types": [
+            "black soil",
+            "coastal alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "dhanbad": {
+        "common_soil_types": [
+            "red soil",
+            "laterite"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "dibrugarh": {
+        "common_soil_types": [
+            "alluvial",
+            "forest soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "faridabad": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "gorakhpur": {
+        "common_soil_types": [
+            "alluvial",
+            "clay loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kalyan": {
+        "common_soil_types": [
+            "black soil",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october"
+            ],
+            "fall": [
+                "november"
+            ]
+        }
+    },
+    "muzaffarnagar": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "rajahmundry": {
+        "common_soil_types": [
+            "alluvial",
+            "red soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "dharmapuri": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "karnal": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "rohtak": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bhiwani": {
+        "common_soil_types": [
+            "sandy",
+            "alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "hisar": {
+        "common_soil_types": [
+            "sandy",
+            "alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "guntur": {
+        "common_soil_types": [
+            "black soil",
+            "red soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "anantapur": {
+        "common_soil_types": [
+            "red soil",
+            "black soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "low",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kurnool": {
+        "common_soil_types": [
+            "black soil",
+            "red soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "low",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kharagpur": {
+        "common_soil_types": [
+            "laterite",
+            "alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "durgapur": {
+        "common_soil_types": [
+            "alluvial",
+            "laterite"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "asansol": {
+        "common_soil_types": [
+            "laterite",
+            "alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "tezpur": {
+        "common_soil_types": [
+            "alluvial",
+            "forest soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "jorhat": {
+        "common_soil_types": [
+            "alluvial",
+            "forest soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kohima": {
+        "common_soil_types": [
+            "hill soil",
+            "forest soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "aizawl": {
+        "common_soil_types": [
+            "hill soil",
+            "forest soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "agartala": {
+        "common_soil_types": [
+            "forest soil",
+            "alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "itanagar": {
+        "common_soil_types": [
+            "hill soil",
+            "forest soil"
+        ],
+        "climate": "subtropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "mussoorie": {
+        "common_soil_types": [
+            "mountain soil",
+            "forest soil"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "nainital": {
+        "common_soil_types": [
+            "mountain soil",
+            "forest soil"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "almora": {
+        "common_soil_types": [
+            "mountain soil",
+            "forest soil"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kalimpong": {
+        "common_soil_types": [
+            "mountain soil",
+            "forest soil"
+        ],
+        "climate": "temperate",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kurseong": {
+        "common_soil_types": [
+            "mountain soil",
+            "forest soil"
+        ],
+        "climate": "temperate",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "coonoor": {
+        "common_soil_types": [
+            "forest soil",
+            "laterite"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september",
+                "october"
+            ],
+            "fall": [
+                "november"
+            ]
+        }
+    },
+    "kodaikanal": {
+        "common_soil_types": [
+            "forest soil",
+            "laterite"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september",
+                "october"
+            ],
+            "fall": [
+                "november"
+            ]
+        }
+    },
+    "munnar": {
+        "common_soil_types": [
+            "forest soil",
+            "laterite"
+        ],
+        "climate": "temperate",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "spring": [
+                "february",
+                "march"
+            ],
+            "summer": [
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "udupi": {
+        "common_soil_types": [
+            "laterite",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october"
+            ],
+            "fall": [
+                "november"
+            ]
+        }
+    },
+    "alwar": {
+        "common_soil_types": [
+            "sandy",
+            "alluvial"
+        ],
+        "climate": "subtropical",
+        "rainfall": "low",
+        "humidity": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may",
+                "june"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "ratnagiri": {
+        "common_soil_types": [
+            "laterite",
+            "coastal alluvial"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "thanjavur": {
+        "common_soil_types": [
+            "alluvial",
+            "black soil"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "february",
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "solapur": {
+        "common_soil_types": [
+            "loamy"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "medium",
+        "soil_fertility": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april",
+                "may"
+            ],
+            "summer": [
+                "june",
+                "july",
+                "august"
+            ],
+            "fall": [
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    },
+    "solapur,_india": {
+        "common_soil_types": [
+            "loamy"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "summer": [
+                "jun",
+                "jul",
+                "aug"
+            ],
+            "winter": [
+                "dec",
+                "jan",
+                "feb"
+            ],
+            "spring": [
+                "mar",
+                "apr",
+                "may"
+            ],
+            "fall": [
+                "sep",
+                "oct",
+                "nov"
+            ],
+            "rainy": []
+        }
+    },
+    "barshi,_india": {
+        "common_soil_types": [
+            "loamy"
+        ],
+        "climate": "temperate",
+        "rainfall": "high",
+        "humidity": "medium",
+        "seasons": {
+            "summer": [
+                "jun",
+                "jul",
+                "aug"
+            ],
+            "winter": [
+                "dec",
+                "jan",
+                "feb"
+            ],
+            "spring": [
+                "mar",
+                "apr",
+                "may"
+            ],
+            "fall": [
+                "sep",
+                "oct",
+                "nov"
+            ],
+            "rainy": []
+        }
+    },
+    "sangli,_india": {
+        "common_soil_types": [
+            "loamy"
+        ],
+        "climate": "temperate",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "seasons": {
+            "summer": [
+                "jun",
+                "jul",
+                "aug"
+            ],
+            "winter": [
+                "dec",
+                "jan",
+                "feb"
+            ],
+            "spring": [
+                "mar",
+                "apr",
+                "may"
+            ],
+            "fall": [
+                "sep",
+                "oct",
+                "nov"
+            ],
+            "rainy": []
+        }
+    }
+}

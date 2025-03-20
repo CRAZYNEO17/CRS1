@@ -1,0 +1,31 @@
+2025-03-06 20:45:06,383 - __main__ - DEBUG - Starting location detection
+2025-03-06 20:45:06,389 - __main__ - INFO - Successfully created Geolocator instance
+2025-03-06 20:45:06,390 - __main__ - DEBUG - Requesting location access
+2025-03-06 20:45:06,391 - __main__ - ERROR - Error accessing location: module 'asyncio' has no attribute 'timeout'
+2025-03-06 23:29:42,009 - __main__ - DEBUG - Starting location detection
+2025-03-06 23:29:42,012 - __main__ - INFO - Successfully created Geolocator instance
+2025-03-06 23:29:42,013 - __main__ - DEBUG - Requesting location access
+2025-03-06 23:29:42,172 - __main__ - DEBUG - Getting position
+2025-03-06 23:29:44,062 - __main__ - INFO - Successfully obtained position
+2025-03-06 23:30:04,547 - __main__ - DEBUG - Starting location detection
+2025-03-06 23:30:04,548 - __main__ - DEBUG - Requesting location access
+2025-03-06 23:30:04,678 - __main__ - DEBUG - Getting position
+2025-03-06 23:30:04,779 - __main__ - INFO - Successfully obtained position
+2025-03-20 23:55:39,351 - __main__ - DEBUG - Starting location detection
+2025-03-20 23:55:39,359 - __main__ - INFO - Successfully created Geolocator instance
+2025-03-20 23:55:39,359 - __main__ - DEBUG - Requesting location access
+2025-03-20 23:55:39,449 - __main__ - DEBUG - Getting position
+2025-03-20 23:55:43,043 - __main__ - INFO - Successfully obtained position
+2025-03-20 23:56:06,711 - __main__ - DEBUG - Starting location detection
+2025-03-20 23:56:06,711 - __main__ - DEBUG - Requesting location access
+2025-03-20 23:56:06,764 - __main__ - DEBUG - Getting position
+2025-03-20 23:56:09,198 - __main__ - INFO - Successfully obtained position
+2025-03-21 00:01:41,869 - __main__ - DEBUG - Starting location detection
+2025-03-21 00:01:41,871 - __main__ - INFO - Successfully created Geolocator instance
+2025-03-21 00:01:41,872 - __main__ - DEBUG - Requesting location access
+2025-03-21 00:01:41,936 - __main__ - DEBUG - Getting position
+2025-03-21 00:01:44,427 - __main__ - INFO - Successfully obtained position
+2025-03-21 00:03:26,411 - __main__ - DEBUG - Starting location detection
+2025-03-21 00:03:26,412 - __main__ - DEBUG - Requesting location access
+2025-03-21 00:03:26,468 - __main__ - DEBUG - Getting position
+2025-03-21 00:03:28,516 - __main__ - INFO - Successfully obtained position
