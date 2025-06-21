@@ -23,8 +23,8 @@ class AgriWiz:
     def load_crop_data(self):
         """Load enhanced crop data from the CSV file."""
         try:
-            if os.path.exists("crop_data.csv"):
-                with open("crop_data.csv", "r") as file:
+            if os.path.exists("data/raw/crop_data.csv"):
+                with open("data/raw/crop_data.csv", "r") as file:
                     reader = csv.DictReader(file)
                     self.crop_data = list(reader)
                 print(f"Loaded {len(self.crop_data)} crops from database with enhanced parameters.")
@@ -73,8 +73,10 @@ class AgriWiz:
     def save_crop_data(self):
         """Save crop data to CSV file."""
         try:
-            with open("crop_data.csv", "w", newline="") as file:
-                fieldnames = ["crop_name", "soil_types", "climates", "seasons", "water_needs", "humidity_preference", "soil_fertility"]
+            os.makedirs("data/raw", exist_ok=True)
+            with open("data/raw/crop_data.csv", "w", newline="") as file:
+                fieldnames = ["crop_name", "soil_types", "climates", "seasons", "water_needs", 
+                             "humidity_preference", "soil_fertility"]
                 writer = csv.DictWriter(file, fieldnames=fieldnames)
                 writer.writeheader()
                 writer.writerows(self.crop_data)

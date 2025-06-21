@@ -1,0 +1,105 @@
+{
+    "punjab": {
+        "common_soil_types": [
+            "loamy",
+            "sandy loam",
+            "clay"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "soil_fertility": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june",
+                "july"
+            ],
+            "rainy": [
+                "july",
+                "august",
+                "september"
+            ],
+            "fall": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "kerala": {
+        "common_soil_types": [
+            "laterite",
+            "forest",
+            "sandy"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "soil_fertility": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "rainy": [
+                "june",
+                "july",
+                "august",
+                "september",
+                "october",
+                "november"
+            ],
+            "spring": [
+                "february",
+                "march"
+            ]
+        }
+    },
+    "california": {
+        "common_soil_types": [
+            "sandy",
+            "clay",
+            "loamy"
+        ],
+        "climate": "mediterranean",
+        "rainfall": "low",
+        "humidity": "low",
+        "soil_fertility": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april",
+                "may"
+            ],
+            "summer": [
+                "june",
+                "july",
+                "august"
+            ],
+            "fall": [
+                "september",
+                "october",
+                "november"
+            ]
+        }
+    }
+}

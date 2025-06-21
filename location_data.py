@@ -14,16 +14,11 @@ class LocationManager:
     def load_location_data(self):
         """Load location data from JSON file."""
         try:
-            if os.path.exists("location_data.json"):
-                with open("location_data.json", "r") as file:
-                    self.location_data = json.load(file)
-                print(f"Loaded {len(self.location_data)} locations from database.")
-            else:
-                print("Location database not found. Creating sample data.")
-                self.create_sample_data()
+            with open("data/processed/location_data.json", "r") as file:
+                self.location_data = json.load(file)
         except Exception as e:
             print(f"Error loading location data: {e}")
-            self.create_sample_data()
+            self.location_data = {}
     
     def create_sample_data(self):
         """Create sample location data if no data file exists."""

@@ -1,107 +1,117 @@
-# AgriWiz - Enhanced Crop Recommendation System
+# Agri Wiz - Agriculture Advisory REST API
 
-AgriWiz is a comprehensive agricultural advisory system that helps farmers make informed decisions about crop selection based on:
-- Local soil conditions and climate
-- Real-time weather data and forecasts
-- Government schemes and subsidies
-- Machine learning-based yield predictions
+Agri Wiz is a REST API service that provides agricultural recommendations, weather data, crop yield estimates, and information about government schemes for farmers.
 
 ## Features
 
-- **Smart Crop Recommendations**: Get personalized crop recommendations based on:
-  - Soil type and fertility
-  - Local climate and weather conditions
-  - Season and rainfall patterns
-  - Water availability and humidity requirements
-
-- **Weather Integration**:
-  - Real-time weather data and 5-day forecasts
-  - Weather suitability analysis for different crops
-  - Seasonal planning based on weather patterns
-
-- **Yield Estimation**:
-  - ML-based crop yield predictions
-  - Confidence intervals for yield estimates
-  - Optimization suggestions for better yields
-  - Factor importance analysis
-
-- **Government Scheme Integration**:
-  - Up-to-date information on agricultural schemes
-  - Eligibility checking for different schemes
-  - Subsidy information for seeds, machinery, and irrigation
-  - State-specific scheme recommendations
+- Crop recommendations based on soil and climate conditions
+- Location-based crop recommendations
+- Real-time weather data
+- Crop yield estimation using machine learning models
+- Government agricultural scheme information
 
 ## Installation
 
 1. Clone the repository
-2. Run the setup script to create a virtual environment and install dependencies:
-   ```bash
-   python setup.py
-   ```
-3. Activate the virtual environment:
-   - Windows: `.\\venv\\Scripts\\activate`
-   - Unix/MacOS: `source venv/bin/activate`
-
-## Usage
-
-### Command Line Interface
-Run the program in CLI mode:
+2. Create a virtual environment:
 ```bash
-python agri_wiz.py
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
-### Graphical Interface
-Run the program in GUI mode:
+## Running the API Server
+
 ```bash
-python agri_wiz.py --gui
+python app.py
 ```
 
-## Available Commands
+The server will start on http://localhost:5000
 
-1. Get crop recommendations
-   - Based on soil type, climate, and season
-   - Optional parameters for more accurate recommendations
+## API Documentation
 
-2. Get location-based recommendations
-   - Uses pre-configured location data
-   - Integrates real-time weather information
+### Health Check
+```
+GET /api/health
+```
 
-3. View weather forecasts
-   - 5-day weather forecasts
-   - Temperature, humidity, and rainfall data
+### Crops
+```
+GET /api/crops
+```
+Get all available crops
 
-4. Estimate crop yields
-   - ML-based yield predictions
-   - Optimization suggestions
+```
+POST /api/crops
+```
+Add a new crop
+```json
+{
+    "crop_name": "string",
+    "soil_types": "string",
+    "climates": "string",
+    "seasons": "string",
+    "water_needs": "string",
+    "humidity_preference": "string",
+    "soil_fertility": "string"
+}
+```
 
-5. Access government schemes
-   - View all available schemes
-   - Check eligibility
-   - Get scheme recommendations by crop
+### Recommendations
+```
+GET /api/recommendations?soil_type=<type>&climate=<climate>&season=<season>&rainfall=<level>&humidity=<level>&soil_fertility=<level>
+```
+Get crop recommendations based on parameters
 
-## Data Sources
+```
+GET /api/recommendations/location/<location>?humidity=<level>&soil_fertility=<level>
+```
+Get crop recommendations based on location
 
-- Crop data from Indian Council of Agricultural Research (ICAR)
-- Weather data from OpenWeather API
-- Government schemes from various agricultural departments
-- Soil data from National Bureau of Soil Survey and Land Use Planning
+### Weather
+```
+GET /api/weather/<location>
+```
+Get weather data for a location
 
-## Requirements
+### Yield Estimation
+```
+POST /api/yield/estimate
+```
+Estimate crop yield
+```json
+{
+    "crop_name": "string",
+    "temperature": number,
+    "rainfall": number,
+    "humidity": number,
+    "soil_ph": number,
+    "soil_fertility": "string",
+    "water_availability": "string",
+    "season": "string"
+}
+```
 
-- Python 3.8 or higher
-- Dependencies listed in requirements.txt
-- Internet connection for weather data
+### Government Schemes
+```
+GET /api/schemes?crop=<crop>&state=<state>&land_area=<area>
+```
+Get schemes by crop and location
 
-## Contributing
+```
+GET /api/schemes?category=<category>
+```
+Get schemes by category
 
-1. Fork the repository
-2. Create a new branch for your feature
-3. Submit a pull request
+## Data Storage
 
-## License
+- Raw data is stored in `data/raw/`
+- Processed data and ML models are stored in `data/processed/`
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Environment Variables
 
-## Contact
-
-For support or queries, please open an issue in the repository.
+- `PORT`: Server port (default: 5000)
+- `OPENWEATHERMAP_API_KEY`: API key for weather data (optional)

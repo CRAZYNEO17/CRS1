@@ -1,0 +1,193 @@
+{
+    "schemes": [
+        {
+            "name": "PM-KISAN",
+            "full_name": "Pradhan Mantri Kisan Samman Nidhi",
+            "description": "Direct income support of Rs. 6000 per year to farmer families",
+            "eligibility": "Small and marginal farmers with cultivable land",
+            "benefits": ["Income support of Rs. 6000 per year", "Paid in three installments"],
+            "documents_required": ["Aadhaar Card", "Land Records", "Bank Account Details"],
+            "application_process": "Online through PM-KISAN portal or Common Service Centers",
+            "website": "https://pmkisan.gov.in"
+        },
+        {
+            "name": "PMFBY",
+            "full_name": "Pradhan Mantri Fasal Bima Yojana",
+            "description": "Crop insurance scheme to provide financial support to farmers suffering crop loss/damage",
+            "eligibility": "All farmers including sharecroppers and tenant farmers",
+            "benefits": [
+                "Insurance coverage and financial support in case of crop failure",
+                "Stabilization of farm income",
+                "Encouragement for innovative practices"
+            ],
+            "covered_risks": [
+                "Natural Fire and Lightning",
+                "Storm, Hailstorm, Cyclone, Typhoon, Tempest, Hurricane, Tornado",
+                "Flood, Inundation and Landslide",
+                "Drought, Dry spells",
+                "Pests/ Diseases"
+            ],
+            "website": "https://pmfby.gov.in"
+        },
+        {
+            "name": "PMKSY",
+            "full_name": "Pradhan Mantri Krishi Sinchayee Yojana",
+            "description": "Scheme for extending irrigation coverage and improving water use efficiency",
+            "components": [
+                "Accelerated Irrigation Benefit Programme (AIBP)",
+                "Har Khet Ko Pani",
+                "Per Drop More Crop",
+                "Watershed Development"
+            ],
+            "benefits": [
+                "Subsidies on micro-irrigation systems",
+                "Water conservation infrastructure",
+                "Precision irrigation technologies"
+            ],
+            "website": "https://pmksy.gov.in"
+        },
+        {
+            "name": "SHC",
+            "full_name": "Soil Health Card Scheme",
+            "description": "Scheme to issue soil health cards to farmers with crop-wise recommendations",
+            "benefits": [
+                "Free soil testing",
+                "Crop-specific nutrient recommendations",
+                "Information on soil health indicators"
+            ],
+            "parameters_tested": [
+                "Macro nutrients (NPK)",
+                "Secondary nutrients",
+                "Micronutrients",
+                "pH",
+                "Electrical conductivity",
+                "Organic carbon"
+            ],
+            "website": "https://soilhealth.dac.gov.in"
+        },
+        {
+            "name": "KCC",
+            "full_name": "Kisan Credit Card",
+            "description": "Credit scheme for farmers to meet agricultural expenses",
+            "benefits": [
+                "Short-term credit for cultivation expenses",
+                "Post-harvest expenses",
+                "Produce marketing loan",
+                "Insurance coverage"
+            ],
+            "loan_types": [
+                "Production credit",
+                "Investment credit",
+                "Consumption needs",
+                "Post-harvest expenses"
+            ],
+            "documents_required": [
+                "Land ownership documents",
+                "Identity proof",
+                "Passport size photographs",
+                "Bank account details"
+            ]
+        },
+        {
+            "name": "PKVY",
+            "full_name": "Paramparagat Krishi Vikas Yojana",
+            "description": "Scheme to promote organic farming",
+            "benefits": [
+                "Financial assistance for organic inputs",
+                "Training on organic farming",
+                "Certification support",
+                "Marketing assistance"
+            ],
+            "components": [
+                "Cluster formation",
+                "Conversion to organic farming",
+                "Value addition",
+                "Marketing"
+            ],
+            "subsidy_pattern": "Rs. 50,000 per hectare for three years"
+        },
+        {
+            "name": "eNAM",
+            "full_name": "National Agriculture Market",
+            "description": "Electronic trading platform for agricultural commodities",
+            "benefits": [
+                "Direct online trading",
+                "Better price discovery",
+                "Access to more buyers/markets",
+                "Reduced transaction costs"
+            ],
+            "features": [
+                "Online bidding",
+                "Quality assaying",
+                "Electronic payment",
+                "Single license valid across markets"
+            ],
+            "website": "https://enam.gov.in"
+        },
+        {
+            "name": "NFSM",
+            "full_name": "National Food Security Mission",
+            "description": "Mission to increase production of rice, wheat, pulses, coarse cereals and nutri-cereals",
+            "components": [
+                "NFSM-Rice",
+                "NFSM-Wheat",
+                "NFSM-Pulses",
+                "NFSM-Coarse Cereals",
+                "NFSM-Nutri Cereals"
+            ],
+            "benefits": [
+                "Demonstration of improved technologies",
+                "Distribution of high-yielding varieties",
+                "Resource conservation techniques",
+                "Integrated pest management"
+            ],
+            "subsidy_components": {
+                "seeds": "50% of cost or Rs. 2000/qtl, whichever is less",
+                "implements": "50% of cost or specified amount",
+                "irrigation": "50% of cost for small equipment"
+            }
+        }
+    ],
+    "state_specific_schemes": {
+        "maharashtra": [
+            {
+                "name": "Mahatma Jyotirao Phule Shetkari Karjamukti Yojana",
+                "description": "Loan waiver scheme for farmers",
+                "benefits": ["Loan waiver up to Rs. 2 lakhs"]
+            }
+        ],
+        "punjab": [
+            {
+                "name": "Pani Bachao Paise Kamao",
+                "description": "Scheme to promote water conservation in agriculture",
+                "benefits": ["Direct benefit transfer for saved electricity"]
+            }
+        ],
+        "karnataka": [
+            {
+                "name": "Krishi Bhagya Yojana",
+                "description": "Scheme for water conservation and harvesting structures",
+                "benefits": ["Financial assistance for farm ponds", "Subsidy on micro-irrigation"]
+            }
+        ]
+    },
+    "subsidy_rates": {
+        "seeds": {
+            "cereals": "50% of cost",
+            "pulses": "50% of cost",
+            "oilseeds": "60% of cost",
+            "fodder": "50% of cost or Rs. 2000/qtl"
+        },
+        "farm_machinery": {
+            "tractors": "40-50% subsidy",
+            "power_tillers": "50% subsidy",
+            "harvesting_machines": "50% subsidy",
+            "small_implements": "50% subsidy"
+        },
+        "irrigation": {
+            "drip_irrigation": "55% subsidy for small farmers",
+            "sprinkler_systems": "50% subsidy for small farmers",
+            "water_pumps": "50% subsidy"
+        }
+    }
+}

@@ -18,95 +18,31 @@ logging.basicConfig(
 )
 
 class YieldEstimator:
-    def __init__(self, model_path="models"):
-        """Initialize YieldEstimator with model path."""
-        self.model_path = model_path
-        self.models = {}
-        self.scalers = {}
-        
-        # Define feature columns for the model
-        self.feature_columns = [
-            'temperature_avg',
-            'rainfall_total',
-            'humidity_avg',
-            'soil_ph',
-            'soil_fertility_num',
-            'water_availability_num',
-            'season_num'
-        ]
-        
-        # Ensure model directory exists
-        os.makedirs(self.model_path, exist_ok=True)
-        
-        # Train or load models
-        self._load_or_train_models()
+    def __init__(self):
+        """Initialize the YieldEstimator with model paths."""
+        self.model_dir = "data/processed/models"
+        self.load_models()
 
-    def _load_or_train_models(self):
-        """Load existing models or train new ones."""
+    def load_models(self):
+        """Load ML models for yield estimation."""
         try:
-            self._load_models()
-            if not self.models:  # No models were loaded
-                logging.info("No models found. Training new models...")
-                self._train_initial_models()
-        except Exception as e:
-            logging.error(f"Error loading models: {e}")
-            logging.info("Training fresh models...")
-            # Clear any partially loaded models
+            os.makedirs(self.model_dir, exist_ok=True)
             self.models = {}
             self.scalers = {}
-            self._train_initial_models()
-
-    def _load_models(self):
-        """Load trained models for different crops."""
-        model_files = [f for f in os.listdir(self.model_path) if f.endswith("_model.joblib")]
-        
-        for file in model_files:
-            try:
-                crop_name = file.replace("_model.joblib", "")
-                model_file = os.path.join(self.model_path, file)
-                scaler_file = os.path.join(self.model_path, f"{crop_name}_scaler.joblib")
-                
-                if os.path.exists(model_file) and os.path.exists(scaler_file):
-                    self.models[crop_name] = joblib.load(model_file)
-                    self.scalers[crop_name] = joblib.load(scaler_file)
-                    logging.info(f"Loaded model for {crop_name}")
-            except Exception as e:
-                logging.warning(f"Failed to load model for {crop_name}: {e}")
-                # Remove failed model files to force retraining
-                try:
-                    os.remove(model_file)
-                    os.remove(scaler_file)
-                except:
-                    pass
-                continue
-        
-        logging.info(f"Successfully loaded {len(self.models)} models")
-
-    def _train_initial_models(self):
-        """Train initial models with sample data for common crops."""
-        sample_data = self._generate_sample_data()
-        
-        for crop_name, data in sample_data.items():
-            X = np.array(data['features'])
-            y = np.array(data['yields'])
             
-            # Scale features
-            scaler = StandardScaler()
-            X_scaled = scaler.fit_transform(X)
-            
-            # Train model
-            model = RandomForestRegressor(n_estimators=100, random_state=42)
-            model.fit(X_scaled, y)
-            
-            # Save model and scaler
-            self.models[crop_name] = model
-            self.scalers[crop_name] = scaler
-            
-            model_file = os.path.join(self.model_path, f"{crop_name}_model.joblib")
-            scaler_file = os.path.join(self.model_path, f"{crop_name}_scaler.joblib")
-            
-            joblib.dump(model, model_file)
-            joblib.dump(scaler, scaler_file)
+            # Load available models
+            for file in os.listdir(self.model_dir):
+                if file.endswith("_model.joblib"):
+                    crop_name = file.replace("_model.joblib", "")
+                    model_path = os.path.join(self.model_dir, file)
+                    scaler_path = os.path.join(self.model_dir, f"{crop_name}_scaler.joblib")
+                    
+                    if os.path.exists(scaler_path):
+                        self.models[crop_name] = joblib.load(model_path)
+                        self.scalers[crop_name] = joblib.load(scaler_path)
+                        
+        except Exception as e:
+            print(f"Error loading yield estimation models: {e}")
 
     def _generate_sample_data(self) -> Dict:
         """Generate sample training data for initial models."""
@@ -320,8 +256,8 @@ class YieldEstimator:
                 self.scalers[crop_name] = scaler
             
             # Save updated model and scaler
-            model_file = os.path.join(self.model_path, f"{crop_name}_model.joblib")
-            scaler_file = os.path.join(self.model_path, f"{crop_name}_scaler.joblib")
+            model_file = os.path.join(self.model_dir, f"{crop_name}_model.joblib")
+            scaler_file = os.path.join(self.model_dir, f"{crop_name}_scaler.joblib")
             
             joblib.dump(self.models[crop_name], model_file)
             joblib.dump(self.scalers[crop_name], scaler_file)

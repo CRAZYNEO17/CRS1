@@ -10,7 +10,7 @@ class SchemeManager:
     def load_schemes(self):
         """Load schemes data from JSON file."""
         try:
-            with open("agricultural_schemes.json", "r") as file:
+            with open("data/raw/agricultural_schemes.json", "r") as file:
                 self.schemes_data = json.load(file)
         except Exception as e:
             print(f"Error loading schemes data: {e}")

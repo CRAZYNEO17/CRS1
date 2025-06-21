@@ -263,8 +263,13 @@ class WeatherAPI:
             return (time.time() - timestamp) < self.cache_duration
         return False
     
-    async def get_weather_data(self, location):
-        """Get current weather data for a location asynchronously."""
+    def get_weather_data(self, location):
+        """
+        Get current weather data for a location.
+        
+        This is a simplified implementation using OpenWeatherMap API.
+        In production, replace this with actual API calls using your API key.
+        """
         # Check if we have valid cached data
         if self._is_cache_valid(location):
             print(f"Using cached weather data for {location}")
@@ -280,15 +285,10 @@ class WeatherAPI:
                 encoded_location = urllib.parse.quote(location)
                 url = f"http://api.openweathermap.org/data/2.5/weather?q={encoded_location}&appid={self.api_key}&units=metric"
                 
-                # Make the API request asynchronously
-                response = await asyncio.get_event_loop().run_in_executor(
-                    None,
-                    lambda: requests.get(url, timeout=10)
-                )
-                if response.status_code == 200:
-                    weather_data = self._parse_api_response(response.json())
-                else:
-                    raise Exception(f"Weather API returned status code {response.status_code}")
+                # Make the API request
+                with urllib.request.urlopen(url) as response:
+                    data = response.read()
+                    weather_data = self._parse_api_response(json.loads(data))
                     
             # Cache the result
             weather_data["timestamp"] = time.time()
@@ -482,25 +482,29 @@ class WeatherAPI:
             }
 
 class WeatherService:
-    def __init__(self, cache_file="weather_cache.json"):
-        self.api_key = "YOUR_API_KEY"  # Replace with actual OpenWeatherMap API key
-        self.cache_file = cache_file
-        self.cache = self._load_cache()
+    def __init__(self):
+        self.cache_file = "data/processed/weather_cache.json"
+        self.cache = self.load_cache()
 
-    def _load_cache(self) -> Dict:
-        """Load cached weather data."""
-        if os.path.exists(self.cache_file):
-            try:
-                with open(self.cache_file, 'r') as f:
-                    return json.load(f)
-            except:
-                return {}
+    def load_cache(self):
+        """Load weather cache from JSON file."""
+        try:
+            os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
+            if os.path.exists(self.cache_file):
+                with open(self.cache_file, "r") as file:
+                    return json.load(file)
+        except Exception as e:
+            print(f"Error loading weather cache: {e}")
         return {}
 
-    def _save_cache(self):
-        """Save weather data to cache."""
-        with open(self.cache_file, 'w') as f:
-            json.dump(self.cache, f)
+    def save_cache(self):
+        """Save weather cache to JSON file."""
+        try:
+            os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
+            with open(self.cache_file, "w") as file:
+                json.dump(self.cache, file)
+        except Exception as e:
+            print(f"Error saving weather cache: {e}")
 
     def get_weather_forecast(self, location: str) -> Optional[Dict]:
         """Get 5-day weather forecast for a location."""
@@ -576,7 +580,7 @@ class WeatherService:
             
             # Cache the results
             self.cache[cache_key] = processed_data
-            self._save_cache()
+            self.save_cache()
             
             return processed_data
             
