@@ -141,3 +141,26 @@ class SchemeManager:
             eligible_schemes.extend(self.schemes_data["state_specific_schemes"][state])
         
         return eligible_schemes
+        
+    def get_schemes_for_state(self, state: str) -> List[Dict]:
+        """Get schemes specific to a state plus national schemes.
+        
+        Args:
+            state: The name of the state (case-insensitive)
+            
+        Returns:
+            A list of scheme dictionaries applicable to the state
+        """
+        # Normalize state name to lowercase for case-insensitive comparison
+        state_lower = state.lower()
+        
+        # Get all national schemes
+        national_schemes = self.schemes_data.get("schemes", [])
+        
+        # Get state-specific schemes if available
+        state_specific_schemes = self.schemes_data.get("state_specific_schemes", {}).get(state_lower, [])
+        
+        # Combine national and state-specific schemes
+        all_applicable_schemes = national_schemes + state_specific_schemes
+        
+        return all_applicable_schemes
