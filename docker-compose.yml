@@ -1,0 +1,10 @@
+services:
+  agriwiz:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - .:/app
+      - /mnt/data/projects/web-development/personal-projects/agri-wiz/CRS1:/app
