@@ -3,19 +3,20 @@ from flask import Blueprint, request, jsonify # type: ignore
 
 # Import from the project root
 from agri_wiz import AgriWiz
-from location_data import LocationManager
+from utils.location_data import LiveLocationManager as LocationManager
 
 # Create instance
 agri_wiz = AgriWiz()
 
 state_crops_bp = Blueprint("state_crops", __name__, url_prefix="/api")
 
-@state_crops_bp.route("/api/state-crops/<location>", methods=["GET"])
+@state_crops_bp.route("/state-crops/<location>", methods=["GET"])
 def get_state_crops(location):
     """Get crop and soil data specific to a state/location"""
     try:
         # Initialize location manager to get state info
-        location_manager = LocationManager()
+        import os
+        location_manager = LocationManager(openweather_api_key=os.getenv('OPENWEATHER_API_KEY'))
         location_info = location_manager.get_location_info(location)
 
         if not location_info:

@@ -483,6 +483,7 @@ class WeatherAPI:
 
 class WeatherService:
     def __init__(self):
+        self.api_key = os.getenv("OPENWEATHERMAP_API_KEY", "demo_key")
         self.cache_file = "data/processed/weather_cache.json"
         self.cache = self.load_cache()
 

@@ -1,1 +1,11 @@
 crop_name,soil_types,climates,seasons,water_needs,humidity_preference,soil_fertility
+Rice,"Clay,Loamy","Tropical,Subtropical","Kharif,Rabi",High,"70-80%",High
+Wheat,"Loamy,Sandy Loam","Temperate,Semi-arid",Rabi,Medium,"60-70%",Medium
+Maize,"Loamy,Well-drained","Tropical,Temperate","Kharif,Rabi",Medium,"60-70%",Medium
+Sugarcane,"Clay Loam,Loamy","Tropical,Subtropical","Year-round",High,"70-85%",High
+Cotton,"Black Cotton,Loamy","Tropical,Semi-arid",Kharif,Medium,"60-70%",Medium
+Soybean,"Well-drained,Loamy","Temperate,Subtropical",Kharif,Medium,"65-75%",Medium
+Barley,"Sandy Loam,Loamy","Temperate,Semi-arid",Rabi,Low,"50-60%",Medium
+Millet,"Sandy,Well-drained","Arid,Semi-arid",Kharif,Low,"40-60%",Low
+Tomato,"Well-drained,Loamy","Temperate,Subtropical","Year-round",Medium,"60-70%",High
+Potato,"Sandy Loam,Well-drained","Temperate,Cool",Rabi,Medium,"60-70%",High

@@ -6,15 +6,15 @@ import os
 import json
 import csv
 from datetime import datetime
-from location_data import LocationManager
-from scheme_manager import SchemeManager
-from weather_api import WeatherService
-from yield_estimation import YieldEstimator
+from utils.location_data import LiveLocationManager as LocationManager
+from utils.scheme_manager import SchemeManager
+from utils.weather_api import WeatherService
+from utils.yield_estimation import YieldEstimator
 
 class AgriWiz:
     def __init__(self):
         self.crop_data = []
-        self.location_manager = LocationManager()
+        self.location_manager = LocationManager(openweather_api_key=os.getenv('OPENWEATHER_API_KEY'))
         self.scheme_manager = SchemeManager()
         self.weather_service = WeatherService()
         self.yield_estimator = YieldEstimator()
@@ -23,15 +23,23 @@ class AgriWiz:
     def load_crop_data(self):
         """Load enhanced crop data from the CSV file."""
         try:
-            if os.path.exists("data/raw/crop_data.csv"):
-                with open("data/raw/crop_data.csv", "r") as file:
+            # Get the directory where this script is located
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            crop_data_path = os.path.join(script_dir, "data", "raw", "crop_data.csv")
+            
+            if os.path.exists(crop_data_path):
+                with open(crop_data_path, "r") as file:
                     reader = csv.DictReader(file)
                     self.crop_data = list(reader)
                 print(f"Loaded {len(self.crop_data)} crops from database with enhanced parameters.")
             else:
-                print("Crop database not found.")
+                print(f"Crop database not found at: {crop_data_path}")
+                print("Creating sample data instead...")
+                self.create_sample_data()
         except Exception as e:
             print(f"Error loading crop data: {e}")
+            print("Creating sample data instead...")
+            self.create_sample_data()
 
     def create_sample_data(self):
         """Create sample crop data if no data file exists."""

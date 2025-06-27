@@ -111,6 +111,15 @@ Get schemes by category
 - Raw data is stored in `data/raw/`
 - Processed data and ML models are stored in `data/processed/`
 
+## Documentation
+
+For comprehensive documentation, please visit the [`docs/`](./docs/) directory:
+
+- **[📋 Application Architecture](./docs/BACKEND_STRUCTURE.md)** - Complete system overview, components, and setup
+- **[🔧 API Reference](./docs/API_DOCUMENTATION.md)** - Detailed API endpoint documentation
+- **[📝 Code Citations](./docs/Code%20Citations.md)** - Development references and credits
+- **[📖 Documentation Index](./docs/README.md)** - Navigation guide for all documentation
+
 ## Environment Variables
 
 - `PORT`: Server port (default: 5000)

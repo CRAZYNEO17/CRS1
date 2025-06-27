@@ -119,14 +119,36 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Python Virtual Environments
 .env
+.env.*
 .venv
+.venv/
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+.virtualenv/
+virtualenv/
+pipenv/
+.conda/
+conda-env/
+
+# Virtual environment configuration
+pyvenv.cfg
+Lib/
+Scripts/
+bin/
+include/
+share/
+pip-selfcheck.json
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Spyder project settings
 .spyderproject
@@ -160,30 +182,29 @@ cython_debug/
 
 # VS Code
 .vscode/
+settings.json
+launch.json
+tasks.json
 
-# Virtual Environment (common names)
-venv/
-env/
-ENV/
-venv.bak/
-env.bak/
-Lib/
-Scripts/
-pyvenv.cfg
+# Machine Learning Models (trained models - exclude from repo)
+data/processed/models/*.joblib
+data/processed/models/*.pkl
+data/processed/models/*.h5
+data/processed/models/*.hdf5
+data/processed/models/*.model
+data/processed/models/*.sav
 
-# Machine Learning / Data Science specific
-*.pkl
-*.joblib
-*.h5
-*.hdf5
-*.model
-*.sav
+# Cache and temporary data files
+data/processed/weather_cache.json
+*.tmp
+*.temp
+cache/
 
-# Data files (you might want to keep some, adjust as needed)
-*.csv
-*.json
-*.xlsx
-*.xls
+# Large data files (keep sample data, exclude large datasets)
+# Uncomment if you have large datasets:
+# data/raw/large_datasets/
+# *.parquet
+# *.feather
 
 # Temporary files
 *.tmp

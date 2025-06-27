@@ -2,15 +2,36 @@
 from flask import Flask, request, jsonify # type: ignore
 from flask_cors import CORS # type: ignore
 from agri_wiz import AgriWiz
-from weather_api import WeatherAPI
-from location_data import LocationManager
+from utils.weather_api import WeatherAPI
+from utils.location_data import LiveLocationManager as LocationManager
 import logging
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env.development when running in development
+if os.getenv('FLASK_ENV') == 'development' or not os.getenv('FLASK_ENV'):
+    # Try to load .env.development first, fallback to .env
+    env_file = '.env.development' if os.path.exists('.env.development') else '.env'
+    if os.path.exists(env_file):
+        load_dotenv(env_file)
+        print(f"Loaded environment variables from {env_file}")
+    else:
+        print("No environment file found, using system environment variables")
+else:
+    # In production, load .env or use system environment variables
+    if os.path.exists('.env'):
+        load_dotenv('.env')
+        print("Loaded environment variables from .env")
 
 # adding routes
 from routes import schemes
 from routes.schemes import schemes_bp
 from routes.state_crops import state_crops_bp
+from routes.recommendation import recommendation_bp
+from routes.health import health_bp
+from routes.crops import crops_bp
+from routes.weather import weather_bp
+from routes.yield_routes import yield_routes_bp
 
 
 # Configure logging
@@ -19,10 +40,19 @@ logging.basicConfig(
 )
 
 app = Flask(__name__)
+
+# Configure Flask app from environment variables
+app.config['DEBUG'] = os.getenv('FLASK_DEBUG', 'False').lower() in ('true', '1', 'yes')
+app.config['ENV'] = os.getenv('FLASK_ENV', 'production')
+
+# Display configuration info
+print(f"Flask Environment: {app.config['ENV']}")
+print(f"Debug Mode: {app.config['DEBUG']}")
+
 # Enable CORS for all routes
 CORS(app, resources={
     r"/api/*": {
-        "origins": ["http://localhost:3001", "http://127.0.0.1:3001"],
+        "origins": ["http://localhost:3000", "http://127.0.0.1:3000"],
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         "allow_headers": ["Content-Type"]
     }
@@ -30,7 +60,12 @@ CORS(app, resources={
 
 # Register the schemes blueprint
 app.register_blueprint(schemes_bp)
-app.register_blueprint(state_crops_bp)   
+app.register_blueprint(state_crops_bp)
+app.register_blueprint(recommendation_bp)
+app.register_blueprint(health_bp)
+app.register_blueprint(crops_bp)
+app.register_blueprint(weather_bp)
+app.register_blueprint(yield_routes_bp)
 
 print("something")
 
@@ -39,143 +74,10 @@ weather_api = WeatherAPI()
 
 @app.after_request
 def after_request(response):
-    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3001')
+    response.headers.add('Access-Control-Allow-Origin', 'http://localhost:3000')
     response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
     return response
-
-
-@app.route("/api/health", methods=["GET"])
-def health_check():
-    """Health check endpoint"""
-    return jsonify({"status": "healthy", "version": "1.0.0"})
-
-
-@app.route("/api/crops", methods=["GET"])
-def get_crops():
-    """Get all available crops"""
-    return jsonify(agri_wiz.crop_data)
-
-
-@app.route("/api/crops", methods=["POST"])
-def add_crop():
-    """Add a new crop"""
-    try:
-        crop_data = request.json
-        required_fields = [
-            "crop_name",
-            "soil_types",
-            "climates",
-            "seasons",
-            "water_needs",
-            "humidity_preference",
-            "soil_fertility",
-        ]
-
-        # Validate required fields
-        for field in required_fields:
-            if field not in crop_data:
-                return jsonify({"error": f"Missing required field: {field}"}), 400
-
-        agri_wiz.add_crop(crop_data)
-        return jsonify({"message": "Crop added successfully", "crop": crop_data})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route("/api/recommendations", methods=["GET"])
-def get_recommendations():
-    """Get crop recommendations based on parameters"""
-    try:
-        soil_type = request.args.get("soil_type")
-        climate = request.args.get("climate")
-        season = request.args.get("season")
-        rainfall = request.args.get("rainfall")
-        humidity = request.args.get("humidity")
-        soil_fertility = request.args.get("soil_fertility")
-
-        if not all([soil_type, climate, season]):
-            return jsonify(
-                {"error": "soil_type, climate, and season are required"}
-            ), 400
-
-        recommendations, scored_recommendations = agri_wiz.get_recommendations(
-            soil_type, climate, season, rainfall, humidity, soil_fertility
-        )
-
-        return jsonify(
-            {
-                "recommendations": recommendations,
-                "scored_recommendations": scored_recommendations,
-            }
-        )
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route("/api/recommendations/location/<location>", methods=["GET"])
-def get_recommendations_by_location(location):
-    """Get crop recommendations based on location"""
-    try:
-        humidity = request.args.get("humidity")
-        soil_fertility = request.args.get("soil_fertility")
-
-        recommendations, details = agri_wiz.get_recommendations_by_location(
-            location, humidity, soil_fertility
-        )
-
-        if recommendations is None:
-            return jsonify({"error": details}), 404
-
-        return jsonify(
-            {"recommendations": recommendations, "location_details": details}
-        )
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route("/api/weather/<location>", methods=["GET"])
-def get_weather(location):
-    """Get weather data for a location"""
-    try:
-        weather_data = weather_api.get_weather_data(location)
-        if weather_data:
-            return jsonify(weather_data)
-        return jsonify({"error": "Could not fetch weather data"}), 404
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
-
-@app.route("/api/yield/estimate", methods=["POST"])
-def estimate_yield():
-    """Estimate crop yield based on parameters"""
-    try:
-        data = request.json
-        required_fields = [
-            "crop_name",
-            "temperature",
-            "rainfall",
-            "humidity",
-            "soil_ph",
-            "soil_fertility",
-            "water_availability",
-            "season",
-        ]
-
-        # Validate required fields
-        for field in required_fields:
-            if field not in data:
-                return jsonify({"error": f"Missing required field: {field}"}), 400
-
-        yield_estimate = agri_wiz.yield_estimator.predict_yield(data["crop_name"], data)
-
-        if "error" in yield_estimate:
-            return jsonify({"error": yield_estimate["error"]}), 400
-
-        return jsonify(yield_estimate)
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
 
 
 if __name__ == "__main__":

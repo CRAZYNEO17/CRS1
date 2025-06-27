@@ -4,7 +4,7 @@ import logging
 
 # Import from the project root
 from agri_wiz import AgriWiz
-from location_data import LocationManager
+from utils.location_data import LiveLocationManager as LocationManager
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
@@ -37,7 +37,8 @@ def get_schemes():
     # Handle location-based scheme requests
     if location:
       logger.debug(f"Fetching location info and schemes for: {location}")
-      location_manager = LocationManager()
+      import os
+      location_manager = LocationManager(openweather_api_key=os.getenv('OPENWEATHER_API_KEY'))
       location_info = location_manager.get_location_info(location)
       if not location_info:
         logger.warning(f"Location not found: {location}")

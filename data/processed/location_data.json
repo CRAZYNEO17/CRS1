@@ -69,6 +69,184 @@
             ]
         }
     },
+    "pune": {
+        "common_soil_types": [
+            "black soil",
+            "red soil",
+            "laterite"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "soil_fertility": "high",
+        "soil_ph": "6.5-7.5",
+        "water_availability": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "monsoon": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "post_monsoon": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "mumbai": {
+        "common_soil_types": [
+            "coastal sandy",
+            "alluvial",
+            "red laterite"
+        ],
+        "climate": "tropical",
+        "rainfall": "high",
+        "humidity": "high",
+        "soil_fertility": "medium",
+        "soil_ph": "6.0-7.0",
+        "water_availability": "high",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "monsoon": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "post_monsoon": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "delhi": {
+        "common_soil_types": [
+            "alluvial",
+            "sandy loam",
+            "clay loam"
+        ],
+        "climate": "subtropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "soil_fertility": "high",
+        "soil_ph": "7.0-8.0",
+        "water_availability": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "spring": [
+                "march",
+                "april"
+            ],
+            "summer": [
+                "may",
+                "june"
+            ],
+            "monsoon": [
+                "july",
+                "august",
+                "september"
+            ],
+            "post_monsoon": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "bangalore": {
+        "common_soil_types": [
+            "red laterite",
+            "red sandy loam",
+            "red clay"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "medium",
+        "soil_fertility": "medium",
+        "soil_ph": "6.0-7.0",
+        "water_availability": "low",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "monsoon": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "post_monsoon": [
+                "october",
+                "november"
+            ]
+        }
+    },
+    "chennai": {
+        "common_soil_types": [
+            "alluvial",
+            "red laterite",
+            "sandy"
+        ],
+        "climate": "tropical",
+        "rainfall": "medium",
+        "humidity": "high",
+        "soil_fertility": "medium",
+        "soil_ph": "6.5-7.5",
+        "water_availability": "medium",
+        "seasons": {
+            "winter": [
+                "december",
+                "january",
+                "february"
+            ],
+            "summer": [
+                "march",
+                "april",
+                "may"
+            ],
+            "southwest_monsoon": [
+                "june",
+                "july",
+                "august",
+                "september"
+            ],
+            "northeast_monsoon": [
+                "october",
+                "november",
+                "december"
+            ]
+        }
+    },
     "california": {
         "common_soil_types": [
             "sandy",
